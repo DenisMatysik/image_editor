@@ -15,7 +15,7 @@ const loadImage = ()=>{
 fileInput.addEventListener("change", loadImage);
 choseImgBtn.addEventListener("click", ()=> fileInput.click());
 
-filterOptions.forEach(option => {
+filterOptions.forEach(option => { // add clcik event to eact button of filter, and add class "active"
     option.addEventListener("click", ()=>{
         document.querySelector(".filter .active").classList.remove("active");
         option.classList.add("active");
