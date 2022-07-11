@@ -10,23 +10,23 @@
     <title>Image editor</title>
 </head>
 <body>
-    <div class="container disable">
+    <div class="container">
         <h2>Image Editor</h2>
         <div class="wrapper">
             <div class="editor-panel">
                 <div class="filter">
                     <label class="title">Filters</label>
                     <div class="options">
-                        <button class="active">Brightness</button>
-                        <button>Saturation</button>
-                        <button>Inversion</button>
-                        <button>Grayscale</button>
+                        <button id="brightness" class="active">Brightness</button>
+                        <button id="saturation">Saturation</button>
+                        <button id="inversion">Inversion</button>
+                        <button id="grayscale">Grayscale</button>
                     </div>
                 </div>
                 <div class="slider">
                     <div class="filter-info">
                         <p class="name">Brightness</p>
-                        <p class="name">100%</p>
+                        <p class="value">100%</p>
                     </div>
                     <input type="range" value="100" min="0" max="200">
                 </div>
